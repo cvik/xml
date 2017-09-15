@@ -7,7 +7,7 @@ a tree of nodes with parent-links on each level for easy down- and up-traversal.
 * Traversal friendly (double linked element tree)
 * Keeps track of namespaces at every element level
 
-### Still TODO
+### TODO
 * Handle CDATA nodes
 * Better error messages
 * Better test-coverage (currently at 80.1%)
