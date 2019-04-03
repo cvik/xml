@@ -12,6 +12,11 @@ a tree of nodes with parent-links on each level for easy down- and up-traversal.
 * Better error messages
 * Better test-coverage (currently at 80.1%)
 * Look into value coercion (maybe)
+* Add documentation (current at 0%)
+* Add usage examples
+* Look into memory usage (currently a bit high)
+* Add SAX functionality
+
 
 ## Testing
  - `go test -coverprofile coverage.out`
