@@ -4,8 +4,6 @@ import (
 	"os"
 	"strings"
 	"testing"
-
-	"github.com/davecgh/go-spew/spew"
 )
 
 func TestParseXML(t *testing.T) {
@@ -86,10 +84,6 @@ func TestParseElement(t *testing.T) {
 		el := parseElement(d)
 		if el == nil {
 			t.Error("Failed to parse element")
-		}
-
-		if el.Name.Name == "" {
-			spew.Dump(el)
 		}
 	}
 }

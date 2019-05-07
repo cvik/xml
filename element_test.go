@@ -3,8 +3,6 @@ package xml
 import (
 	"os"
 	"testing"
-
-	"github.com/davecgh/go-spew/spew"
 )
 
 const yaml = `abc:
@@ -73,10 +71,6 @@ func testParseElement(t *testing.T) {
 		el := parseElement(d)
 		if el == nil {
 			t.Error("Failed to parse element")
-		}
-
-		if el.Name.Name == "" {
-			spew.Dump(el)
 		}
 	}
 }
