@@ -1,0 +1,23 @@
+version: v1.0
+name: CI
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+
+blocks:
+  - name: Build
+    task:
+      jobs:
+      - name: Build
+        commands:
+          - checkout
+          - go build
+
+  - name: Test
+    task:
+      jobs:
+      - name: Test
+        commands:
+          - checkout
+          - go test
